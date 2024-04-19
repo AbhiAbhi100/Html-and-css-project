@@ -1,0 +1,67 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height:100%;
+    width: 100%;
+    display: flex;/* jisko side by side dalna hai uske parent ko flex */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans';
+    background-color: salmon;
+}
+h1{
+    font-weight: normal;
+}
+
+#top{
+    background-color: seagreen;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.shape{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    /* background-color: rgb(59, 11, 214); */
+    border: 3px solid black ;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle{
+    border-radius: 50%;
+}
+
+#diamond{
+    rotate: 45deg;
+    margin-top: 48px;
+    height: 140 px;
+    width: 140 px;
+    /* kishkana translate */
+    translate: 20px;
+
+}
+#diamond h1{
+    rotate: -45deg;
+}
+#circle:hover{
+    background-color: #87f30c;
+}
+#diamond:hover{
+    background-color: aqua;
+}
+#square:hover{
+    background-color: red;
+}
